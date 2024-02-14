@@ -1,0 +1,24 @@
+section {
+  display: grid;
+  margin: 100px 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section > div {
+  background-color: brown;
+  margin: 40px 36px;
+  width: 600px;
+  height: 300px;
+}
+
+@media (max-width: 750px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
