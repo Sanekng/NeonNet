@@ -1,9 +1,18 @@
 body {
-  background-color: rgb(2, 1, 43);
+  background: rgb(2, 1, 43);
+  background: linear-gradient(90deg, rgba(2, 1, 43, 1) 0%, rgb(4, 1, 47) 100%);
   font-family: "Orbitron", sans-serif;
   color: rgb(97, 229, 240);
   font-size: 24px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding-bottom: 300px;
 }
 
 .header-img {
@@ -24,7 +33,7 @@ ul {
   list-style: none;
 }
 
-ul li {
+header li {
   border: 2px solid rgb(97, 229, 240);
   border-radius: 51px;
   box-shadow: rgba(97, 229, 240, 0.25) 0px 8px 28px,
@@ -46,4 +55,16 @@ ul a:hover li {
 ul a:hover {
   color: black;
   transition-duration: 0.5s;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: rgb(2, 1, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 1, 43, 1) 0%,
+    rgba(14, 12, 46, 1) 100%
+  );
 }

@@ -1,24 +1,53 @@
-section {
-  display: grid;
-  margin: 100px 50px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+main {
+  margin: 0;
+  padding-top: 100px;
 }
 
-section > div {
-  background-color: brown;
-  margin: 40px 36px;
-  width: 600px;
-  height: 300px;
+ul {
+  display: flex;
 }
 
-@media (max-width: 750px) {
-  section {
-    grid-template-columns: 1fr 1fr;
-  }
+.cybercities img {
+  height: 430px;
+  width: 850px;
+  object-fit: cover;
 }
 
-@media (min-width: 1000px) {
-  section {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+.cybercities li {
+  margin: 50px;
+  box-shadow: rgba(254, 42, 109, 0.25) 0px 25px 30px -2px;
+  border-radius: 16px;
+  list-style: none;
+  background: rgb(29, 25, 158);
+  background: linear-gradient(
+    30deg,
+    rgba(29, 25, 158, 1) 0%,
+    rgba(34, 147, 139, 1) 48%,
+    rgba(255, 42, 109, 1) 100%
+  );
+  width: 960px;
+  height: 800px;
+  text-align: center;
+}
+
+.cybercities li:hover {
+  box-shadow: rgba(254, 42, 109, 0.9) 0px 25px 50px -2px;
+  transition-duration: 0.5s;
+  width: 980px;
+  height: 810px;
+}
+
+.cybercities p {
+  width: 850px;
+  margin: 25px auto;
+  background: -webkit-linear-gradient(
+    rgba(253, 187, 45, 1),
+    rgba(34, 193, 195, 1)
+  );
+  background-clip: unset;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
 }
