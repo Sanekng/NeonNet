@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon/favicon.ico" />
-    <link rel="stylesheet" href="/static/css/styles.css" />
-    <link rel="stylesheet" href="/static/css/shared.css" />
+    <link rel="stylesheet" href="/static/css/contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,19 +17,32 @@
     <title>NeonNet</title>
   </head>
   <body>
-    <header>
-      <div class="header-img"></div>
-      <nav>
-        <ul>
-          <a href="index.html"><li>Home</li></a>
-          <a href="newsets.html"><li>New Sets</li></a>
-          <a href="cart.html"><li>Your cart</li></a>
-          <a href="about-us.html"><li>About Us</li></a>
-          <a href="contact-us.html"><li>Contact Us</li></a>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+    <form action="contact-us.html" method="GET">
+      <label for="username">Your Name</label>
+      <input type="text" name="user-name" id="username"/>
+      <label for="useremail">Your Email</label>
+      <input type="email" name="user-email" id="useremail">
+      <label for="userage">Your Age</label>
+      <input type="number" step="1" name="user-age" id="userage">
+      <label for="userpass">Your Password</label>
+      <input type="password" name="user-pass" id="userpass">
+      <label for="userbirth">Your Birth Date</label>
+      <input type="date" name="user-birth" id="userbirth">
+      <hr>
+      <h2>How should we verify your account</h2>
+      <div class="form-inl">
+        <input type="radio" name="verify-acc" id="verify-text" value="text-msg">
+        <label for="verify-text">By a text</label>
+      </div>
+      <div class="form-inl">
+        <input type="radio" name="verify-acc" id="verify-email" value="email">
+        <label for="verify-email">By a email</label>
+      </div>
+      <div class="form-inl">
+        <input type="radio" name="verify-acc" id="verify-phone" value="phone">
+        <label for="verify-phone">By a phone</label>
+      </div>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
