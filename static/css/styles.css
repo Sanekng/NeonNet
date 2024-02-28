@@ -1,6 +1,6 @@
 main {
   margin: 0;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 ul {
@@ -8,13 +8,13 @@ ul {
 }
 
 .cybercities img {
-  height: 430px;
-  width: 850px;
+  height: 100px;
+  width: 200px;
   object-fit: cover;
 }
 
 .cybercities li {
-  margin: 50px;
+  margin: 20px;
   box-shadow: rgba(254, 42, 109, 0.25) 0px 25px 30px -2px;
   border-radius: 16px;
   list-style: none;
@@ -25,20 +25,20 @@ ul {
     rgba(34, 147, 139, 1) 48%,
     rgba(255, 42, 109, 1) 100%
   );
-  width: 960px;
-  height: 800px;
+  width: 400px;
+  height: 300px;
   text-align: center;
 }
 
 .cybercities li:hover {
   box-shadow: rgba(254, 42, 109, 0.9) 0px 25px 50px -2px;
   transition-duration: 0.5s;
-  width: 980px;
-  height: 810px;
+  width: 410px;
+  height: 304px;
 }
 
 .cybercities p {
-  width: 850px;
+  
   margin: 25px auto;
   background: -webkit-linear-gradient(
     rgba(253, 187, 45, 1),
@@ -48,6 +48,10 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
+}
+
+.cybercities h2 {
+  font-size: 20px;
 }
