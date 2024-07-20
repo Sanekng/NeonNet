@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/taskform.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="taskform.html" method="GET">
+            <section>
+                <h2>How can we help you?</h2>
+                <ul>
+                    <li>
+                        <label for="username">Your Name</label>
+                        <input type="text" id="username" name="user-name" required placeholder="Sasha Galushko">
+                    </li>
+                    <li>
+                        <label for="useremail">Your E-Mail Adress</label>
+                        <input type="email" id="useremail" name="user-email" required placeholder="example@gmail.com">
+                    </li>
+                    <li>
+                        <label for="userphone">Your Phone Number</label>
+                        <input type="number" id="userphone" name="user-phone" required placeholder="069100100">
+                    </li>
+                    <li>
+                        <label for="user-text">Your Message</label>
+                        <textarea name="user-text" id="user-text" rows="6" required></textarea>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <label for="howfound">How did you find us?</label>
+                <select name="how-found" id="howfound" required>
+                    <option value="web-search">Web Search</option>
+                    <option value="friend-group">Friend Group</option>
+                    <option value="workplace">Workplace</option>
+                </select>
+            </section>
+            <section>
+                <h2>How should we reply?</h2>
+                <ul>
+                    <li class="form-inl">
+                        <input type="radio" name="reply" id="repl-phone" value="call" required>
+                        <label for="repl-phone">Call me</label>
+                    </li>
+                    <li class="form-inl">
+                        <input type="radio" name="reply" id="repl-email" value="email" required>
+                        <label for="repl-email">Send me an email</label>
+                    </li>
+                    <li class="form-inl">
+                        <input type="radio" name="reply" id="repl-dont" value="dont" required>
+                        <label for="repl-dont" >Don't reply</label>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="form-inl">
+                    <input type="checkbox" id="accept" name="accept-terms" required>
+                    <label for="accept">Accept Terms</label>
+                </div>
+            </section>
+            <section class="button">
+                <button type="reset" class="clear-btn">Clear</button>
+                <button type="submit" class="submit-btn">Submit</button>
+            </section>
+    </main> 
+    
+</body>
+</html>

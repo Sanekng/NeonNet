@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('shared/head')%>
+    <link rel="stylesheet" href="/css/contact.css" />
+    <title>NeonNet</title>
+  </head>
+  <body>
+    <header>
+      <h1>Demo</h1>
+    </header>
+    <main>
+      <form action="/contact-us" method="POST">
+        <section>
+          <h2>Personal Details</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" required placeholder="Sasha Galushko"/>
+            </li>
+            <li>
+              <label for="useremail">Your Email</label>
+              <input type="email" name="user-email" id="useremail" required placeholder="example@gmail.com"/>
+            </li>
+            <li>
+              <label for="userpass">Your Password</label>
+              <input type="password" name="user-pass" id="userpass" required minlength="7"/>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>More Details</h2>
+          <ul>
+            <li>
+              <label for="userage">Your Age</label>
+              <input type="number" step="1" name="user-age" id="userage" required min="18" max="100"/>
+            </li>
+            <li>
+              <label for="userbirth">Your Birth Date</label>
+              <input type="date" name="user-birth" id="userbirth" required min="1921-01-01" max="2024-09-01"/>
+            </li>
+            <li>
+              <label for="favcolor">Favourite Color</label>
+              <select name="fav-color" id="favcolor">
+                <option value="black">Black</option>
+                <option value="orange">Orange</option>
+                <option value="blue">Blue</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="usermessage"></label>
+          <textarea
+            name="user-message"
+            id="usermessage"
+            rows="10"
+          ></textarea>
+        </section>
+        <section>
+          <h2>How should we verify your account</h2>
+          <ul>
+            <li class="form-inl">
+              <input
+                type="radio"
+                name="verify-acc"
+                id="verify-text"
+                value="text-msg"
+                required
+              />
+              <label for="verify-text">By a text</label>
+            </li>
+            <li class="form-inl">
+              <input
+                type="radio"
+                name="verify-acc"
+                id="verify-email"
+                value="email"
+                
+              />
+              <label for="verify-email">By a email</label>
+            </li>
+            <li class="form-inl">
+              <input
+                type="radio"
+                name="verify-acc"
+                id="verify-phone"
+                value="phone"
+              />
+              <label for="verify-phone">By a phone</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How to Contact You</h2>
+          <ul>
+            <li class="form-inl">
+              <input
+                type="checkbox"
+                id="contact-email"
+                name="contact"
+                value="email"
+              />
+              <label for="contact-email">contact through email</label>
+            </li>
+            <li class="form-inl">
+              <input
+                type="checkbox"
+                id="contact-phone"
+                name="contact"
+                value="phone"
+              />
+              <label for="contact-phone">contact through phone</label>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section>
+          <div class="form-inl">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Agree to terms</label>
+          </div>
+        </section>
+
+        <section>
+          <button>Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

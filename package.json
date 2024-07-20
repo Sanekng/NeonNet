@@ -1,0 +1,17 @@
+{
+  "name": "neonnet",
+  "version": "1.0.0",
+  "description": "The beginning of the project that will represent the skills aquired across the courses and 2 years of explorations done in the programming world.  NeonNet is the name given by the ChatGPT, and the project is set to implement various functions and techniques.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
