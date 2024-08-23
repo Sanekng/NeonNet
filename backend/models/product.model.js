@@ -19,8 +19,7 @@ const productSchema = new Schema({
       },
     ],
   },
-  seller: { type: Schema.Types.ObjectId, ref: "User", required: true }, // Link to the seller
-  createdAt: { type: Date, default: Date.now },
+  seller: { type: Schema.Types.ObjectId, ref: "User", required: true }
 });
 
 module.exports = mongoose.model("Product", productSchema);
